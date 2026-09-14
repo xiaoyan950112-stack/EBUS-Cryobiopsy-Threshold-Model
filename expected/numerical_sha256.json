@@ -1,0 +1,7 @@
+{
+  "legacy_v020/results.json": "f1738c75bbe8651e0cd983cbe22c54e8fcd7dc9ffb6dbedc87a8520481acb40b",
+  "legacy_v020/grid.csv": "2e6681a345a1bcc6172307498e8db9c166423ab48ddd7cfe665a68e379681441",
+  "differential_results.json": "b0d30cf8b1c16578cca48d5add6d5cdef696cc41637b7a12ca3ef27a4cd276b0",
+  "cost_ceiling/ceiling_grid.csv": "ce34975d10509e4346eb485c346f65d8fe6e0bf4f804c2cd8743409ace9f18ba",
+  "cost_ceiling/translation_sensitivity.csv": "3f0f4b4798d8c25de7ace26ebd13e3152174bef3e8179a0b2ef4913f0c768ecc"
+}

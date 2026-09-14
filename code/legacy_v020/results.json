@@ -1,0 +1,207 @@
+{
+  "status": "ALL INPUTS HYPOTHETICAL; NOT CALIBRATED",
+  "denominator": "100 trigger-eligible, technically/safety feasible patients with initial TBNA-confirmed target NSCLC; conditional analysis; 100% delivery",
+  "bundle": "EGFR and ALK decision-specific scenario; not an assay adequacy estimate",
+  "settings": {
+    "horizon": 120,
+    "pathway": "neoadjuvant",
+    "need_pre_markers": true,
+    "alternative_success": 0.5,
+    "alternative_cost": 250,
+    "alternative_days": 7,
+    "repeat_uptake": 0.8,
+    "repeat_success": 0.9,
+    "repeat_wait": 14,
+    "repeat_report": 10,
+    "repeat_cost": 6000,
+    "repeat_event": 0.02,
+    "event_cost": 3000,
+    "stage_success": 0.85,
+    "joint": [
+      0.65,
+      0.15,
+      0.1,
+      0.1
+    ],
+    "diagnostic": [
+      0.15,
+      0.15,
+      0.6,
+      0.1
+    ],
+    "diagnostic_nsclc": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "surgery_uptake": 0.8,
+    "surgery_wait": 14,
+    "surgical_report": 10,
+    "surgical_marker_success": 0.9,
+    "surgical_assay_cost": 250,
+    "scheduling": "sequential",
+    "crt_start_wait": 7,
+    "crt_duration": 42,
+    "crt_completed": 0.9,
+    "crt_nonprogression": 0.8
+  },
+  "g": 0.3,
+  "cryo_cost": 600,
+  "cryo_event": 0.005,
+  "cryo_event_cost": 3000,
+  "thresholds": [
+    {
+      "relation": "independent",
+      "p": 0.2,
+      "r_threshold": null
+    },
+    {
+      "relation": "independent",
+      "p": 0.4,
+      "r_threshold": 0.7897575508526808
+    },
+    {
+      "relation": "independent",
+      "p": 0.6,
+      "r_threshold": 0.5265050339017874
+    },
+    {
+      "relation": "independent",
+      "p": 0.8,
+      "r_threshold": 0.3948787754263404
+    },
+    {
+      "relation": "independent",
+      "p": 1,
+      "r_threshold": 0.3159030203410725
+    },
+    {
+      "relation": "lower",
+      "p": 0.2,
+      "r_threshold": null
+    },
+    {
+      "relation": "lower",
+      "p": 0.4,
+      "r_threshold": 0.5749813014210918
+    },
+    {
+      "relation": "lower",
+      "p": 0.6,
+      "r_threshold": 0.38332086761406126
+    },
+    {
+      "relation": "lower",
+      "p": 0.8,
+      "r_threshold": 0.3242302825811893
+    },
+    {
+      "relation": "lower",
+      "p": 1,
+      "r_threshold": 0.31590302034107237
+    },
+    {
+      "relation": "upper",
+      "p": 0.2,
+      "r_threshold": null
+    },
+    {
+      "relation": "upper",
+      "p": 0.4,
+      "r_threshold": null
+    },
+    {
+      "relation": "upper",
+      "p": 0.6,
+      "r_threshold": 0.7010943912448698
+    },
+    {
+      "relation": "upper",
+      "p": 0.8,
+      "r_threshold": 0.4355524079320112
+    },
+    {
+      "relation": "upper",
+      "p": 1,
+      "r_threshold": 0.3159030203410725
+    }
+  ],
+  "examples": [
+    {
+      "p": 0.4,
+      "r": 0.5,
+      "A": {
+        "cost": 223312.00000000003,
+        "repeat_operations": 35.199999999999996,
+        "expected_events": 0.7040000000000001,
+        "nsclc_ready": 85.52000000000001,
+        "nsclc_marker_complete": 93.68
+      },
+      "B": {
+        "cost": 245876.00000000003,
+        "repeat_operations": 29.600000000000005,
+        "expected_events": 1.0919999999999999,
+        "nsclc_ready": 87.96000000000001,
+        "nsclc_marker_complete": 96.84
+      },
+      "delta": {
+        "cost": 22564.0,
+        "repeat_operations": -5.599999999999991,
+        "expected_events": 0.3879999999999998,
+        "nsclc_ready": 2.4399999999999977,
+        "nsclc_marker_complete": 3.1599999999999966
+      }
+    },
+    {
+      "p": 0.6,
+      "r": 0.8,
+      "A": {
+        "cost": 262248.0,
+        "repeat_operations": 40.800000000000004,
+        "expected_events": 0.8160000000000001,
+        "nsclc_ready": 83.08000000000001,
+        "nsclc_marker_complete": 90.52
+      },
+      "B": {
+        "cost": 230301.6,
+        "repeat_operations": 27.36,
+        "expected_events": 1.0472000000000001,
+        "nsclc_ready": 88.93600000000002,
+        "nsclc_marker_complete": 98.10400000000001
+      },
+      "delta": {
+        "cost": -31946.399999999994,
+        "repeat_operations": -13.440000000000005,
+        "expected_events": 0.23120000000000007,
+        "nsclc_ready": 5.856000000000009,
+        "nsclc_marker_complete": 7.584000000000017
+      }
+    },
+    {
+      "p": 0.8,
+      "r": 0.8,
+      "A": {
+        "cost": 301184.00000000006,
+        "repeat_operations": 46.400000000000006,
+        "expected_events": 0.928,
+        "nsclc_ready": 80.64,
+        "nsclc_marker_complete": 87.36
+      },
+      "B": {
+        "cost": 238088.8,
+        "repeat_operations": 28.48,
+        "expected_events": 1.0696,
+        "nsclc_ready": 88.44800000000001,
+        "nsclc_marker_complete": 97.47200000000001
+      },
+      "delta": {
+        "cost": -63095.20000000007,
+        "repeat_operations": -17.920000000000005,
+        "expected_events": 0.14160000000000006,
+        "nsclc_ready": 7.808000000000007,
+        "nsclc_marker_complete": 10.112000000000009
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+RUN code/reproduce_all.py
+Completed: 7 conditional + 23 implementation/rescue tests; numerical results and Figure 1.
+
+
+RUN code/cost_ceiling/analysis.py
+u, report ceiling, full-bridge ceiling, differential report ceiling
+0.0000, 120.0000, 46.0526, -5.0784
+0.2500, 374.5200, 143.7303, 211.2636
+0.5000, 629.0400, 241.4079, 427.6056
+0.7500, 883.5600, 339.0855, 643.9476
+0.8000, 934.4640, 358.6211, 687.2160
+1.0000, 1138.0800, 436.7632, 985.3680
+
+test_budget (__main__.Checks.test_budget) ... ok
+test_differential_no_effect_is_not_sampling (__main__.Checks.test_differential_no_effect_is_not_sampling) ... ok
+test_equal_closed_form_grid (__main__.Checks.test_equal_closed_form_grid) ... ok
+test_fan_is_separate (__main__.Checks.test_fan_is_separate) ... ok
+test_invalid (__main__.Checks.test_invalid) ... ok
+test_no_effect (__main__.Checks.test_no_effect) ... ok
+test_no_repeat (__main__.Checks.test_no_repeat) ... ok
+test_original_identity (__main__.Checks.test_original_identity) ... ok
+test_staging_all (__main__.Checks.test_staging_all) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.002s
+
+OK
+
+{
+  "status": "passed",
+  "version": "1.0.0",
+  "python": "3.12.5",
+  "platform": "Darwin",
+  "numpy": "2.3.5",
+  "matplotlib": "3.10.8",
+  "original_tests": 30,
+  "supplement_tests": 9,
+  "current_integration_comparisons": 162,
+  "maximum_cost_difference_per_patient": 1.3642420526593924e-12,
+  "supplement_table_value_checks": 6,
+  "matched_numerical_files": {
+    "legacy_v020/results.json": "f1738c75bbe8651e0cd983cbe22c54e8fcd7dc9ffb6dbedc87a8520481acb40b",
+    "legacy_v020/grid.csv": "2e6681a345a1bcc6172307498e8db9c166423ab48ddd7cfe665a68e379681441",
+    "differential_results.json": "b0d30cf8b1c16578cca48d5add6d5cdef696cc41637b7a12ca3ef27a4cd276b0",
+    "cost_ceiling/ceiling_grid.csv": "ce34975d10509e4346eb485c346f65d8fe6e0bf4f804c2cd8743409ace9f18ba",
+    "cost_ceiling/translation_sensitivity.csv": "3f0f4b4798d8c25de7ace26ebd13e3152174bef3e8179a0b2ef4913f0c768ecc"
+  },
+  "csv_data_rows": {
+    "legacy_v020/grid.csv": 30603,
+    "cost_ceiling/ceiling_grid.csv": 1616,
+    "cost_ceiling/translation_sensitivity.csv": 25
+  },
+  "validation_scope": "Developer-authored internal verification only; no clinical or external validation"
+}

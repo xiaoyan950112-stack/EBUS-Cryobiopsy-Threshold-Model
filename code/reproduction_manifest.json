@@ -1,0 +1,27 @@
+{
+  "python": "3.12.5",
+  "numpy": "2.3.5",
+  "matplotlib": "3.10.8",
+  "tests": 30,
+  "status": "Primary/implementation inputs hypothetical; S3 evidence and assumptions documented separately; no clinical validation",
+  "sha256": {
+    "cost_ceiling/analysis.py": "1aab82492e2f599c6a53b5c6abc59cb1a14213b4d47e00f48a48f4d4724237cc",
+    "cost_ceiling/ceiling_grid.csv": "ce34975d10509e4346eb485c346f65d8fe6e0bf4f804c2cd8743409ace9f18ba",
+    "cost_ceiling/translation_sensitivity.csv": "3f0f4b4798d8c25de7ace26ebd13e3152174bef3e8179a0b2ef4913f0c768ecc",
+    "differential.py": "0df6790d7d34ac1ca03bb417a8b8813f5adc0bcc7abeb2b27eafe780b36304f4",
+    "differential_results.json": "b0d30cf8b1c16578cca48d5add6d5cdef696cc41637b7a12ca3ef27a4cd276b0",
+    "legacy_v020/grid.csv": "2e6681a345a1bcc6172307498e8db9c166423ab48ddd7cfe665a68e379681441",
+    "legacy_v020/integrated.py": "c1e008fd92d649febcbdc3fc87691934751793a0b3c913fec8d7f6d72d1e7064",
+    "legacy_v020/reproduce.py": "b453e4f3f43af6b30e6b0b8cb80670369ecc96509f0119d77b8993caade434e2",
+    "legacy_v020/results.json": "f1738c75bbe8651e0cd983cbe22c54e8fcd7dc9ffb6dbedc87a8520481acb40b",
+    "legacy_v020/selection_v0_3.py": "7fe38bd6085e8f9d8aadf61bf4de42fa1746ea9f288885baf115e9983858d0f7",
+    "legacy_v020/test_primary.py": "d08cf0e3482f9eaa3c7e3b7fd676a176659c4141ad9535ad151af4cd992ba590",
+    "make_figure.py": "181768aaf792878f77fd4731b1cb82aa95ca301d43eb1c6fc1322f7b2d7ad4c2",
+    "population.py": "5432e20564a7036c8728f5da974aed34bb190f9debc72802d4cfba04a43b7368",
+    "reproduce_all.py": "d034088e228538bf3086b2fd2d54a32aff11d7cfdf600ab0303a3d1487a3bbcc",
+    "run_differential.py": "1931b1b8d23321a1d42bebd3a4849cbfdc84cea321348c71ecac48c0e57cebc9",
+    "run_population.py": "46ae026f467681e0e3f751eeaec8ae489439c5d25e8032e30770100d8d7abc52",
+    "test_differential.py": "a32050142534fcb385c41e3494e3b59da807c71400ff017ed648092baec42416",
+    "test_population.py": "145318488f99cfe9f486d1909d50af23ae34b830ed7cdac4700da86fb3acecf8"
+  }
+}

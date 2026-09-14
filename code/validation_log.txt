@@ -1,0 +1,181 @@
+RUN legacy_v020/reproduce.py
+{
+  "thresholds": [
+    {
+      "relation": "independent",
+      "p": 0.2,
+      "r_threshold": null
+    },
+    {
+      "relation": "independent",
+      "p": 0.4,
+      "r_threshold": 0.7897575508526808
+    },
+    {
+      "relation": "independent",
+      "p": 0.6,
+      "r_threshold": 0.5265050339017874
+    },
+    {
+      "relation": "independent",
+      "p": 0.8,
+      "r_threshold": 0.3948787754263404
+    },
+    {
+      "relation": "independent",
+      "p": 1,
+      "r_threshold": 0.3159030203410725
+    },
+    {
+      "relation": "lower",
+      "p": 0.2,
+      "r_threshold": null
+    },
+    {
+      "relation": "lower",
+      "p": 0.4,
+      "r_threshold": 0.5749813014210918
+    },
+    {
+      "relation": "lower",
+      "p": 0.6,
+      "r_threshold": 0.38332086761406126
+    },
+    {
+      "relation": "lower",
+      "p": 0.8,
+      "r_threshold": 0.3242302825811893
+    },
+    {
+      "relation": "lower",
+      "p": 1,
+      "r_threshold": 0.31590302034107237
+    },
+    {
+      "relation": "upper",
+      "p": 0.2,
+      "r_threshold": null
+    },
+    {
+      "relation": "upper",
+      "p": 0.4,
+      "r_threshold": null
+    },
+    {
+      "relation": "upper",
+      "p": 0.6,
+      "r_threshold": 0.7010943912448698
+    },
+    {
+      "relation": "upper",
+      "p": 0.8,
+      "r_threshold": 0.4355524079320112
+    },
+    {
+      "relation": "upper",
+      "p": 1,
+      "r_threshold": 0.3159030203410725
+    }
+  ],
+  "examples": [
+    {
+      "p": 0.4,
+      "r": 0.5,
+      "A": {
+        "cost": 223312.00000000003,
+        "repeat_operations": 35.199999999999996,
+        "expected_events": 0.7040000000000001,
+        "nsclc_ready": 85.52000000000001,
+        "nsclc_marker_complete": 93.68
+      },
+      "B": {
+        "cost": 245876.00000000003,
+        "repeat_operations": 29.600000000000005,
+        "expected_events": 1.0919999999999999,
+        "nsclc_ready": 87.96000000000001,
+        "nsclc_marker_complete": 96.84
+      },
+      "delta": {
+        "cost": 22564.0,
+        "repeat_operations": -5.599999999999991,
+        "expected_events": 0.3879999999999998,
+        "nsclc_ready": 2.4399999999999977,
+        "nsclc_marker_complete": 3.1599999999999966
+      }
+    },
+    {
+      "p": 0.6,
+      "r": 0.8,
+      "A": {
+        "cost": 262248.0,
+        "repeat_operations": 40.800000000000004,
+        "expected_events": 0.8160000000000001,
+        "nsclc_ready": 83.08000000000001,
+        "nsclc_marker_complete": 90.52
+      },
+      "B": {
+        "cost": 230301.6,
+        "repeat_operations": 27.36,
+        "expected_events": 1.0472000000000001,
+        "nsclc_ready": 88.93600000000002,
+        "nsclc_marker_complete": 98.10400000000001
+      },
+      "delta": {
+        "cost": -31946.399999999994,
+        "repeat_operations": -13.440000000000005,
+        "expected_events": 0.23120000000000007,
+        "nsclc_ready": 5.856000000000009,
+        "nsclc_marker_complete": 7.584000000000017
+      }
+    },
+    {
+      "p": 0.8,
+      "r": 0.8,
+      "A": {
+        "cost": 301184.00000000006,
+        "repeat_operations": 46.400000000000006,
+        "expected_events": 0.928,
+        "nsclc_ready": 80.64,
+        "nsclc_marker_complete": 87.36
+      },
+      "B": {
+        "cost": 238088.8,
+        "repeat_operations": 28.48,
+        "expected_events": 1.0696,
+        "nsclc_ready": 88.44800000000001,
+        "nsclc_marker_complete": 97.47200000000001
+      },
+      "delta": {
+        "cost": -63095.20000000007,
+        "repeat_operations": -17.920000000000005,
+        "expected_events": 0.14160000000000006,
+        "nsclc_ready": 7.808000000000007,
+        "nsclc_marker_complete": 10.112000000000009
+      }
+    }
+  ]
+}
+
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.010s
+
+OK
+
+RUN run_differential.py
+equal 0.5265050339017874 {'cost': -31946.399999999994, 'repeat_operations': -13.440000000000005, 'expected_events': 0.23120000000000007, 'nsclc_ready': 5.856000000000009, 'nsclc_marker_complete': 7.584000000000017} -1942.822399999999
+lower_alternative 0.6890936564043064 {'cost': -19729.44000000003, 'repeat_operations': -11.424000000000003, 'expected_events': 0.27152, 'nsclc_ready': 4.977599999999995, 'nsclc_marker_complete': 6.446400000000011} 696.040959999993
+more_invasive 0.662912308930008 {'cost': -22492.800000000047, 'repeat_operations': -11.880000000000003, 'expected_events': 0.26239999999999997, 'nsclc_ready': 7.152000000000001, 'nsclc_marker_complete': 8.610000000000014} 99.15519999998924
+lower_invasive_success 0.5265050339017874 {'cost': -31946.399999999994, 'repeat_operations': -13.440000000000005, 'expected_events': 0.23120000000000007, 'nsclc_ready': 4.4879999999999995, 'nsclc_marker_complete': 6.216000000000008} -1942.822399999999
+combined 0.7699640646835695 {'cost': -7221.599999999977, 'repeat_operations': -9.360000000000003, 'expected_events': 0.31279999999999997, 'nsclc_ready': 3.9479999999999933, 'nsclc_marker_complete': 5.352000000000018} 3397.7344000000044
+longer_wait 0.0 {'cost': -69760.79999999999, 'repeat_operations': -19.680000000000003, 'expected_events': 0.10639999999999994, 'nsclc_ready': 0.671999999999997, 'nsclc_marker_complete': 3.480000000000004} -10110.732799999998
+
+.......................
+----------------------------------------------------------------------
+Ran 23 tests in 0.013s
+
+OK
+
+RUN make_figure.py
+
+Matplotlib is building the font cache; this may take a moment.
