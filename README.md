@@ -10,7 +10,7 @@ Use Python 3.12 (tested) in a new virtual environment. From the extracted packag
     .venv/bin/python -m pip install -r requirements-lock.txt
     .venv/bin/python reproduce_release.py
 
-On Windows, use .venv\Scripts\python.exe instead. A nonzero exit means a computation, test or reference-output check failed. Installation requires access to the Python package index; model reproduction itself needs no network. Outputs are written into code/ and Figure_1.png/pdf into this directory. The supplementary figure is code/cost_ceiling/cost_ceiling.png. No random seed is needed.
+On Windows, use .venv\Scripts\python.exe instead. A nonzero exit means a computation, test or reference-output check failed. Installation requires access to the Python package index; model reproduction itself needs no network. Outputs are written into `code/`; Figure 1 and Figure S1 are also exported as PNG and PDF files in the repository root. No random seed is needed.
 
 The entry point runs 30 original tests, 9 supplementary tests, and 162 executable integration comparisons over documented p/r/uptake/rescue combinations. It checks five numerical output files against hashes of the preceding manuscript package and checks the reported S3 table values. These are developer-authored internal checks, not external validation. Figure rendering can vary with fonts and platform; numerical references are checked independently.
 
@@ -26,12 +26,12 @@ See MANUSCRIPT_MAP.md for outputs and parameter locations, VERIFICATION.md for t
 - ORCID: https://orcid.org/0009-0002-1572-4047
 - Affiliation: Division of Pulmonary, Critical Care and Sleep Medicine, University at Buffalo, Buffalo, NY, USA
 - GitHub: https://github.com/xiaoyan950112-stack
-- Repository name: `ebus-cryobiopsy-threshold-model`
-- Intended repository URL: https://github.com/xiaoyan950112-stack/ebus-cryobiopsy-threshold-model
+- Repository name: `EBUS-Cryobiopsy-Threshold-Model`
+- Repository URL: https://github.com/xiaoyan950112-stack/EBUS-Cryobiopsy-Threshold-Model
 - Version: 1.0.0
 - License: MIT (see LICENSE)
 - Copyright: 2026 Linjie Yan
 
 Cite this software using CITATION.cff: Yan, Linjie. Selective add-on mediastinal cryobiopsy threshold model (version 1.0.0).
 
-This is the finalized v1.0.0 package prepared for public archival release. It has not been published externally or publicly deposited, and no software DOI has been reserved or registered. The repository URL above is the intended destination, not confirmation of an existing public repository. SHA256SUMS.json covers every packaged file except itself; the ZIP checksum is supplied separately.
+This repository contains the finalized v1.0.0 code prepared for archival release. A version-specific Zenodo DOI will be added after the GitHub v1.0.0 release is archived. SHA256SUMS.json covers the files in the prepared v1.0.0 package except itself.
