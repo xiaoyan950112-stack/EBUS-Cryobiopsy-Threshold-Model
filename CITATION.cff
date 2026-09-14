@@ -9,7 +9,6 @@ authors:
     orcid: "https://orcid.org/0009-0002-1572-4047"
     affiliation: "Division of Pulmonary, Critical Care and Sleep Medicine, University at Buffalo, Buffalo, NY, USA"
     website: "https://github.com/xiaoyan950112-stack"
-# Intended repository destination; external publication is deferred.
-repository-code: "https://github.com/xiaoyan950112-stack/ebus-cryobiopsy-threshold-model"
+repository-code: "https://github.com/xiaoyan950112-stack/EBUS-Cryobiopsy-Threshold-Model"
 license: MIT
 abstract: "Deterministic exploratory cost-consequence threshold model for selective add-on mediastinal cryobiopsy, including population implementation, differential rescue and conditional cost ceilings. Primary and implementation inputs are hypothetical; no clinical calibration or external validation is claimed."
